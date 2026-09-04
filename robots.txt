@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://styazhka-shymkent.kz/sitemap.xml
