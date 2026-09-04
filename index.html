@@ -23,7 +23,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="styles.css">
 
@@ -129,16 +129,12 @@
       <img class="logo-mark" src="images/logo.png" alt="Логотип — Мастер по стяжке">
       <span class="logo-stack">
         <span class="logo-text" data-i18n="logo.header">Мастер по стяжке</span>
-        <span class="logo-sub" data-i18n="logo.tag">Шымкент · 10+ лет опыта</span>
       </span>
     </a>
 
     <nav class="main-nav" id="mainNav">
-      <a href="#services" data-i18n="nav.services">Услуги</a>
-      <a href="#why" data-i18n="nav.why">Почему мы</a>
       <a href="#before-after" data-i18n="nav.before_after">Наши работы</a>
-      <a href="#process" data-i18n="nav.process">Как работаем</a>
-      <a href="#reviews" data-i18n="nav.reviews">Отзывы</a>
+      <a href="#process" data-i18n="nav.process" class="hide-mobile">Как работаем</a>
       <a href="#faq" data-i18n="nav.faq">Вопросы</a>
     </nav>
 
@@ -183,17 +179,11 @@
         </a>
       </div>
 
-      <div class="hero-trust">
-        <span><span class="dot"></span> <span data-i18n="hero.trust1">Опытная бригада</span></span>
-        <span><span class="dot"></span> <span data-i18n="hero.trust2">Соблюдение технологии</span></span>
-        <span><span class="dot"></span> <span data-i18n="hero.trust3">Аккуратный результат</span></span>
-        <span><span class="dot"></span> <span data-i18n="hero.trust4">Бесплатный замер</span></span>
-      </div>
     </div>
 
     <div class="hero-media">
       <div class="hero-photo">
-        <img src="images/hero-bg.jpg" alt="Мастер выполняет профессиональную стяжку пола в Шымкенте">
+        <img src="images/hero-driveway.jpg" alt="Стяжка двора в Шымкенте — до и после">
       </div>
       <div class="hero-badge-card">
         <strong data-i18n="hero.badgecard1">10+ ЛЕТ</strong>
@@ -211,109 +201,40 @@
 <section class="section section-dark">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow" data-i18n="pain.eyebrow">Почему это важно</span>
-      <h2 data-i18n-html="pain.h2">ПЛОХАЯ СТЯЖКА — ЭТО<br><span class="accent">ПРОБЛЕМЫ НА ГОДЫ</span></h2>
+      <span class="eyebrow" data-i18n="pain.eyebrow">Почему именно цементная стяжка</span>
+      <h2 data-i18n-html="pain.h2">ЦЕМЕНТНАЯ СТЯЖКА — ЭТО<br><span class="accent">НАДЁЖНОСТЬ НА ГОДЫ</span></h2>
     </div>
 
     <div class="grid grid-3 pain-cards">
       <div class="pain-card reveal">
-        <div class="pain-num">01</div>
-        <h3 data-i18n="pain1.title">Перепады по высоте</h3>
-        <p data-i18n="pain1.desc">Скрип ламината, трещины плитки, видимые зазоры в покрытии.</p>
+        <div class="pain-num"></div>
+        <h3 data-i18n="pain1.title">Высокая прочность</h3>
+        <p data-i18n="pain1.desc">Цементная стяжка выдерживает большие нагрузки и служит десятилетиями.</p>
       </div>
       <div class="pain-card reveal">
-        <div class="pain-num">02</div>
-        <h3 data-i18n="pain2.title">Трещины в стяжке</h3>
-        <p data-i18n="pain2.desc">Нарушение технологии — трещины появляются уже через полгода.</p>
+        <div class="pain-num"></div>
+        <h3 data-i18n="pain2.title">Идеальная ровность</h3>
+        <p data-i18n="pain2.desc">Пол получается полностью ровным — без бугров и перепадов.</p>
+      </div>
+      <div class="pain-card reveal hide-mobile">
+        <div class="pain-num"></div>
+        <h3 data-i18n="pain3.title">Подходит под любое покрытие</h3>
+        <p data-i18n="pain3.desc">Ламинат, плитка, линолеум и другие финишные материалы — без ограничений.</p>
       </div>
       <div class="pain-card reveal">
-        <div class="pain-num">03</div>
-        <h3 data-i18n="pain3.title">Неровная поверхность</h3>
-        <p data-i18n="pain3.desc">Бугры и ямы делают укладку напольных покрытий невозможной.</p>
+        <div class="pain-num"></div>
+        <h3 data-i18n="pain4.title">Экономия материалов</h3>
+        <p data-i18n="pain4.desc">Ровный пол требует меньше клея и других материалов — вы экономите деньги.</p>
       </div>
       <div class="pain-card reveal">
-        <div class="pain-num">04</div>
-        <h3 data-i18n="pain4.title">Перерасход клея</h3>
-        <p data-i18n="pain4.desc">На кривом основании расход плиточного клея растёт в 2–3 раза.</p>
+        <div class="pain-num"></div>
+        <h3 data-i18n="pain5.title">Проверенная технология</h3>
+        <p data-i18n="pain5.desc">Классический метод заливки, десятилетиями подтвердивший надёжность.</p>
       </div>
       <div class="pain-card reveal">
-        <div class="pain-num">05</div>
-        <h3 data-i18n="pain5.title">Проблемы с ламинатом</h3>
-        <p data-i18n="pain5.desc">Скрипит, провисает, расходятся замки — следствие плохой стяжки.</p>
-      </div>
-      <div class="pain-card reveal">
-        <div class="pain-num">06</div>
-        <h3 data-i18n="pain6.title">Ремонт поверх ремонта</h3>
-        <p data-i18n="pain6.desc">Переделка обходится дороже, чем сделать правильно с первого раза.</p>
-      </div>
-    </div>
-
-    <div class="pain-outro reveal">
-      <p data-i18n="pain.highlight">Поэтому стяжку пола важно доверять мастерам, которые знают технологию и имеют реальный опыт.</p>
-      <a href="https://wa.me/77770865023?text=Здравствуйте! Хочу получить консультацию мастера по стяжке." class="btn btn-primary">
-        <svg class="ic"><use href="#i-whatsapp"/></svg> <span data-i18n="pain.cta">Получить консультацию</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ===== SERVICES ===== -->
-<section class="section section-surface" id="services">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow" data-i18n="services.eyebrow">Объекты</span>
-      <h2 data-i18n="services.h2">Выполняем стяжку для разных типов объектов</h2>
-    </div>
-
-    <div class="grid grid-3">
-      <div class="service-card reveal">
-        <img src="images/service-floor-house.jpg" alt="Стяжка пола в частном доме" loading="lazy">
-        <div class="service-overlay"></div>
-        <div class="service-body">
-          <h3 data-i18n="service1.title">Пол в доме</h3>
-          <p data-i18n="service1.desc">Загородные и городские частные дома</p>
-        </div>
-        <div class="service-arrow"><svg class="ic"><use href="#i-arrow"/></svg></div>
-      </div>
-
-      <div class="service-card reveal">
-        <img src="images/service-apartment.jpg" alt="Стяжка пола в квартире" loading="lazy">
-        <div class="service-overlay"></div>
-        <div class="service-body">
-          <h3 data-i18n="service2.title">Квартиры</h3>
-          <p data-i18n="service2.desc">Новостройки и вторичное жильё</p>
-        </div>
-        <div class="service-arrow"><svg class="ic"><use href="#i-arrow"/></svg></div>
-      </div>
-
-      <div class="service-card reveal">
-        <img src="images/service-yard.jpg" alt="Стяжка двора частного дома" loading="lazy">
-        <div class="service-overlay"></div>
-        <div class="service-body">
-          <h3 data-i18n="service3.title">Двор</h3>
-          <p data-i18n="service3.desc">Ровное покрытие, устойчивое к нагрузке</p>
-        </div>
-        <div class="service-arrow"><svg class="ic"><use href="#i-arrow"/></svg></div>
-      </div>
-
-      <div class="service-card reveal">
-        <img src="images/service-commercial.jpg" alt="Стяжка коммерческого помещения" loading="lazy">
-        <div class="service-overlay"></div>
-        <div class="service-body">
-          <h3 data-i18n="service4.title">Коммерческие объекты</h3>
-          <p data-i18n="service4.desc">Склады, офисы, торговые площади</p>
-        </div>
-        <div class="service-arrow"><svg class="ic"><use href="#i-arrow"/></svg></div>
-      </div>
-
-      <div class="service-card reveal">
-        <img src="images/service-laminate.jpg" alt="Стяжка под ламинат и другие покрытия" loading="lazy">
-        <div class="service-overlay"></div>
-        <div class="service-body">
-          <h3 data-i18n="service5.title">Под ламинат и другие покрытия</h3>
-          <p data-i18n="service5.desc">Готовим основание под любой финиш</p>
-        </div>
-        <div class="service-arrow"><svg class="ic"><use href="#i-arrow"/></svg></div>
+        <div class="pain-num"></div>
+        <h3 data-i18n="pain6.title">Долгий срок службы</h3>
+        <p data-i18n="pain6.desc">При соблюдении технологии служит без трещин десятки лет.</p>
       </div>
     </div>
   </div>
@@ -329,57 +250,21 @@
 
     <div class="floor-types">
       <div class="floor-type reveal">
-        <div class="floor-type-icon"><svg class="ic"><use href="#i-layers"/></svg></div>
+        <div class="floor-type-photo"><img src="images/floor-laminate.jpg" alt="Стяжка под ламинат" loading="lazy"></div>
         <span data-i18n="floortype1">Под ламинат</span>
       </div>
       <div class="floor-type reveal">
-        <div class="floor-type-icon"><svg class="ic"><use href="#i-grid"/></svg></div>
+        <div class="floor-type-photo"><img src="images/floor-tile.jpg" alt="Стяжка под плитку" loading="lazy"></div>
         <span data-i18n="floortype2">Под плитку</span>
       </div>
       <div class="floor-type reveal">
-        <div class="floor-type-icon"><svg class="ic"><use href="#i-maximize"/></svg></div>
+        <div class="floor-type-photo"><img src="images/floor-linoleum.jpg" alt="Стяжка под линолеум" loading="lazy"></div>
         <span data-i18n="floortype3">Под линолеум</span>
       </div>
       <div class="floor-type reveal">
-        <div class="floor-type-icon"><svg class="ic"><use href="#i-building"/></svg></div>
+        <div class="floor-type-photo"><img src="images/floor-quartzvinyl.jpg" alt="Стяжка под кварцвинил" loading="lazy"></div>
         <span data-i18n="floortype4">Под кварцвинил</span>
       </div>
-      <div class="floor-type reveal">
-        <div class="floor-type-icon"><svg class="ic"><use href="#i-star"/></svg></div>
-        <span data-i18n="floortype5">Другие покрытия</span>
-      </div>
-    </div>
-
-    <div class="section-cta-link reveal">
-      <a href="https://wa.me/77770865023?text=Здравствуйте! Хочу вызвать мастера на замер." class="btn btn-primary">
-        <svg class="ic"><use href="#i-whatsapp"/></svg> <span data-i18n="floortypes.cta">Вызвать мастера на замер</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ===== WHY US ===== -->
-<section class="section section-surface" id="why">
-  <div class="container why-layout">
-    <div class="why-intro reveal">
-      <span class="eyebrow" data-i18n="why.eyebrow">Почему выбирают нас</span>
-      <h2 data-i18n-html="why.h2">10 ЛЕТ ОПЫТА —<br><span class="accent">ЗНАЕМ, КАК<br>СДЕЛАТЬ ПРАВИЛЬНО</span></h2>
-      <p data-i18n="why.p">За десять лет практики мы выполнили сотни объектов и выработали чёткий профессиональный подход к каждой стяжке.</p>
-      <div class="btn-group">
-        <a href="tel:+77770865023" class="btn btn-primary"><svg class="ic"><use href="#i-phone"/></svg> <span data-i18n="common.call">Позвонить</span></a>
-        <a href="https://wa.me/77770865023?text=Здравствуйте! Хочу узнать стоимость заливки стяжки." class="btn btn-ghost"><svg class="ic"><use href="#i-whatsapp"/></svg> WhatsApp</a>
-      </div>
-    </div>
-
-    <div class="why-list">
-      <div class="why-row reveal"><div class="why-check"><svg class="ic"><use href="#i-check"/></svg></div><span data-i18n="why1">10+ лет практического опыта</span></div>
-      <div class="why-row reveal"><div class="why-check"><svg class="ic"><use href="#i-check"/></svg></div><span data-i18n="why2">Опытная профессиональная бригада</span></div>
-      <div class="why-row reveal"><div class="why-check"><svg class="ic"><use href="#i-check"/></svg></div><span data-i18n="why3">Строгое соблюдение технологии</span></div>
-      <div class="why-row reveal"><div class="why-check"><svg class="ic"><use href="#i-check"/></svg></div><span data-i18n="why4">Контроль уровня и геометрии</span></div>
-      <div class="why-row reveal"><div class="why-check"><svg class="ic"><use href="#i-check"/></svg></div><span data-i18n="why5">Аккуратная и чистая работа</span></div>
-      <div class="why-row reveal"><div class="why-check"><svg class="ic"><use href="#i-check"/></svg></div><span data-i18n="why6">Прозрачный расчёт стоимости</span></div>
-      <div class="why-row reveal"><div class="why-check"><svg class="ic"><use href="#i-check"/></svg></div><span data-i18n="why7">Выезд по Шымкенту и области</span></div>
-      <div class="why-row reveal"><div class="why-check"><svg class="ic"><use href="#i-check"/></svg></div><span data-i18n="why8">Ответственность за каждый объект</span></div>
     </div>
   </div>
 </section>
@@ -388,7 +273,6 @@
 <section class="section section-dark" id="before-after">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow" data-i18n="before_after.eyebrow">Наши работы</span>
       <h2 data-i18n="before_after.h2">Результат лучше любых обещаний</h2>
       <p data-i18n="before_after.p">Реальные объекты, которые мы выполнили. Нажмите на фото, чтобы увеличить.</p>
     </div>
@@ -414,7 +298,7 @@
 </section>
 
 <!-- ===== PROCESS / STEPS ===== -->
-<section class="section" id="process">
+<section class="section hide-mobile" id="process">
   <div class="container">
     <div class="section-head reveal">
       <span class="eyebrow" data-i18n="process.eyebrow">Как мы работаем</span>
@@ -422,26 +306,31 @@
     </div>
     <div class="grid steps">
       <div class="step reveal">
+        <div class="step-icon"><svg class="ic"><use href="#i-phone"/></svg></div>
         <div class="step-num">01</div>
         <h3 data-i18n="step1.title">Звонок или WhatsApp</h3>
         <p data-i18n="step1.desc">Оставляете заявку удобным способом</p>
       </div>
       <div class="step reveal">
+        <div class="step-icon"><svg class="ic"><use href="#i-home"/></svg></div>
         <div class="step-num">02</div>
         <h3 data-i18n="step2.title">Уточняем детали</h3>
         <p data-i18n="step2.desc">Узнаём площадь, объект и объём работ</p>
       </div>
       <div class="step reveal">
+        <div class="step-icon"><svg class="ic"><use href="#i-calc"/></svg></div>
         <div class="step-num">03</div>
         <h3 data-i18n="step3.title">Расчёт стоимости</h3>
         <p data-i18n="step3.desc">Называем предварительную цену и сроки</p>
       </div>
       <div class="step reveal">
+        <div class="step-icon"><svg class="ic"><use href="#i-clock"/></svg></div>
         <div class="step-num">04</div>
         <h3 data-i18n="step4.title">Согласуем дату</h3>
         <p data-i18n="step4.desc">Фиксируем удобное время начала работ</p>
       </div>
       <div class="step reveal">
+        <div class="step-icon"><svg class="ic"><use href="#i-layers"/></svg></div>
         <div class="step-num">05</div>
         <h3 data-i18n="step5.title">Выполняем стяжку</h3>
         <p data-i18n="step5.desc">По технологии с контролем на каждом этапе</p>
@@ -462,56 +351,7 @@
     <span class="offer-badge" data-i18n="offer.badge">Опыт более 10 лет</span>
     <div class="offer-buttons">
       <a href="tel:+77770865023" class="btn btn-primary btn-lg"><svg class="ic"><use href="#i-phone"/></svg> <span data-i18n="hero.cta1">Рассчитать стоимость</span></a>
-      <a href="https://wa.me/77770865023?text=Здравствуйте! Хочу узнать стоимость заливки стяжки." class="btn btn-outline btn-lg"><svg class="ic"><use href="#i-whatsapp"/></svg> <span data-i18n="common.whatsapp_link">Написать в WhatsApp</span></a>
-    </div>
-  </div>
-</section>
-
-<!-- ===== REVIEWS ===== -->
-<section class="section" id="reviews">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow" data-i18n="reviews.eyebrow">Отзывы</span>
-      <h2 data-i18n="reviews.h2">Что говорят клиенты</h2>
-      <p class="placeholder-note" data-i18n="reviews.note">Ниже — примеры отзывов для оформления блока. После первых работ они будут заменены на настоящие отзывы клиентов.</p>
-    </div>
-    <div class="grid grid-3">
-      <div class="review-card reveal">
-        <span class="placeholder-tag" data-i18n="reviews.tag">Пример</span>
-        <div class="stars"><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg></div>
-        <p data-i18n="review1.text">«Заливали стяжку в новом доме — 280 м². Уровень выставили идеально, ни одной трещины после высыхания. Бригада приехала вовремя и убрала за собой мусор.»</p>
-        <div class="review-meta"><strong>Ерлан М.</strong><span data-i18n="review1.loc">Частный дом, Шымкент</span></div>
-      </div>
-      <div class="review-card reveal">
-        <span class="placeholder-tag" data-i18n="reviews.tag">Пример</span>
-        <div class="stars"><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg></div>
-        <p data-i18n="review2.text">«Делали стяжку под ламинат в квартире. Приятно удивило, что мастер сам приехал на замер и честно рассказал про технологию. Пол получился ровный, как зеркало.»</p>
-        <div class="review-meta"><strong>Айгерим С.</strong><span data-i18n="review2.loc">Квартира, Шымкент</span></div>
-      </div>
-      <div class="review-card reveal">
-        <span class="placeholder-tag" data-i18n="reviews.tag">Пример</span>
-        <div class="stars"><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg></div>
-        <p data-i18n="review3.text">«Заказывали стяжку в складском помещении — площадь немаленькая. Работали быстро, уложились в срок, который озвучили заранее. Стоимость назвали до начала работ, без сюрпризов.»</p>
-        <div class="review-meta"><strong>Дмитрий К.</strong><span data-i18n="review3.loc">Коммерческий объект, Шымкент</span></div>
-      </div>
-      <div class="review-card reveal">
-        <span class="placeholder-tag" data-i18n="reviews.tag">Пример</span>
-        <div class="stars"><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg></div>
-        <p data-i18n="review4.text">«Обратилась по рекомендации соседей. Всё объяснили заранее, выполнили в срок, убрали за собой мусор. Очень довольна результатом!»</p>
-        <div class="review-meta"><strong>Марина Д.</strong><span data-i18n="review4.loc">Частный дом, Шымкент</span></div>
-      </div>
-      <div class="review-card reveal">
-        <span class="placeholder-tag" data-i18n="reviews.tag">Пример</span>
-        <div class="stars"><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg></div>
-        <p data-i18n="review5.text">«Заливали двор перед домом. Учли уклон для стока воды, поверхность получилась ровная и прочная. Цена соответствовала расчёту.»</p>
-        <div class="review-meta"><strong>Руслан П.</strong><span data-i18n="review5.loc">Двор частного дома, Шымкент</span></div>
-      </div>
-      <div class="review-card reveal">
-        <span class="placeholder-tag" data-i18n="reviews.tag">Пример</span>
-        <div class="stars"><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg><svg class="ic"><use href="#i-star"/></svg></div>
-        <p data-i18n="review6.text">«Приехали вовремя, работали чисто и аккуратно. Пол идеально ровный, отдельное спасибо за порядок после работы.»</p>
-        <div class="review-meta"><strong>Елена Т.</strong><span data-i18n="review6.loc">Квартира, Шымкент</span></div>
-      </div>
+      <a href="https://wa.me/77770865023?text=Здравствуйте! Хочу узнать стоимость заливки стяжки." class="btn btn-accent btn-lg"><svg class="ic"><use href="#i-whatsapp"/></svg> <span data-i18n="common.whatsapp_link">Написать в WhatsApp</span></a>
     </div>
   </div>
 </section>
@@ -549,10 +389,6 @@
         <div class="faq-a"><p data-i18n="faq.a6">Срок зависит от площади и типа объекта. Точный срок согласовываем при обсуждении заявки.</p></div>
       </div>
       <div class="faq-item">
-        <button class="faq-q"><span data-i18n="faq.q7">Когда можно укладывать напольное покрытие?</span> <span class="faq-q-icon"><svg class="ic"><use href="#i-chevron"/></svg></span></button>
-        <div class="faq-a"><p data-i18n="faq.a7">При полусухой стяжке — через 7–10 дней. Классическая цементная стяжка набирает полную прочность за 28 дней.</p></div>
-      </div>
-      <div class="faq-item">
         <button class="faq-q"><span data-i18n="faq.q8">Можно ли рассчитать стоимость по WhatsApp?</span> <span class="faq-q-icon"><svg class="ic"><use href="#i-chevron"/></svg></span></button>
         <div class="faq-a"><p data-i18n="faq.a8">Да! Напишите нам площадь и тип помещения — дадим предварительный расчёт. Точную сумму зафиксируем после замера.</p></div>
       </div>
@@ -572,7 +408,6 @@
       <a href="https://wa.me/77770865023?text=Здравствуйте! Хочу узнать стоимость заливки стяжки." class="btn btn-accent btn-lg"><svg class="ic"><use href="#i-whatsapp"/></svg> <span data-i18n="common.whatsapp_link">Написать в WhatsApp</span></a>
       <a href="tel:+77770865023" class="btn btn-outline btn-lg"><svg class="ic"><use href="#i-phone"/></svg> <span data-i18n="final.call">Позвонить мастеру</span></a>
     </div>
-    <p class="phone-echo">+7 777 086 50 23</p>
   </div>
 </section>
 
@@ -580,7 +415,6 @@
 <footer class="site-footer">
   <div class="container footer-inner">
     <div class="footer-brand">
-      <span class="logo-sub" data-i18n="logo.tag">Шымкент · 10+ лет опыта</span>
       <span class="logo-text" data-i18n="logo.footer">мастер по стяжке</span>
       <p data-i18n="footer.desc">Заливка цементной стяжки пола и двора в Шымкенте и Туркестанской области. Опыт более 10 лет.</p>
     </div>
@@ -593,11 +427,9 @@
     </div>
     <div class="footer-col">
       <h4 data-i18n="footer.sections">Разделы</h4>
-      <a href="#services" data-i18n="nav.services">Услуги</a>
       <a href="#before-after" data-i18n="nav.before_after">Наши работы</a>
-      <a href="#reviews" data-i18n="nav.reviews">Отзывы</a>
       <a href="#faq" data-i18n="nav.faq">Вопросы</a>
-      <a href="https://wa.me/77770865023?text=Здравствуйте! Хочу узнать стоимость заливки стяжки." class="btn btn-primary btn-sm footer-cta"><svg class="ic"><use href="#i-whatsapp"/></svg> <span data-i18n="common.whatsapp_link">Написать в WhatsApp</span></a>
+      <a href="https://wa.me/77770865023?text=Здравствуйте! Хочу узнать стоимость заливки стяжки." class="btn btn-accent btn-sm footer-cta"><svg class="ic"><use href="#i-whatsapp"/></svg> <span data-i18n="common.whatsapp_link">Написать в WhatsApp</span></a>
     </div>
   </div>
   <div class="footer-bottom">
