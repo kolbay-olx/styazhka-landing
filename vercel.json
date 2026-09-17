@@ -5,6 +5,16 @@
       "has": [{ "type": "host", "value": "www.styazhka-shymkent.kz" }],
       "destination": "https://styazhka-shymkent.kz/:path*",
       "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/kk/index.html",
+      "destination": "/kk/",
+      "permanent": true
     }
   ]
 }
