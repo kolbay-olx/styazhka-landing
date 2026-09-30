@@ -1,4 +1,4 @@
-{
+﻿{
   "trailingSlash": true,
   "headers": [
     {
@@ -10,7 +10,7 @@
       "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600, stale-while-revalidate=86400" }]
     },
     {
-      "source": "/(favicon.ico|favicon-48.png|favicon-96.png|favicon-192.png|apple-touch-icon.png)",
+      "source": "/(favicon.ico|favicon-48.png|favicon-96.png|favicon-120.png|favicon-192.png|apple-touch-icon.png)",
       "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800" }]
     }
   ],
