@@ -33,6 +33,17 @@
       "permanent": true
     },
     {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "styazhka-landing.vercel.app"
+        }
+      ],
+      "destination": "https://styazhka-shymkent.kz/:path*",
+      "permanent": true
+    },
+    {
       "source": "/index.html",
       "destination": "/",
       "permanent": true
