@@ -64,6 +64,15 @@ if (modal && modalClose && modalLabel && modalPhoto) {
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
 }
 
+// ===== Metrika goals: WhatsApp and phone clicks =====
+document.addEventListener('click', (e) => {
+  const link = e.target.closest('a[href]');
+  if (!link || typeof window.ym !== 'function') return;
+  const href = link.getAttribute('href');
+  if (href.startsWith('https://wa.me/')) window.ym(113211714, 'reachGoal', 'whatsapp');
+  else if (href.startsWith('tel:')) window.ym(113211714, 'reachGoal', 'phone');
+});
+
 // ===== Footer year =====
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
