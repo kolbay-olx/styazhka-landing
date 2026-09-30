@@ -3,21 +3,32 @@
   "headers": [
     {
       "source": "/images/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800, stale-while-revalidate=86400" }]
-    },
-    {
-      "source": "/(styles.css|script.js)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600, stale-while-revalidate=86400" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800, stale-while-revalidate=86400"
+        }
+      ]
     },
     {
       "source": "/(favicon.ico|favicon-48.png|favicon-96.png|favicon-120.png|favicon-192.png|apple-touch-icon.png)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800"
+        }
+      ]
     }
   ],
   "redirects": [
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.styazhka-shymkent.kz" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.styazhka-shymkent.kz"
+        }
+      ],
       "destination": "https://styazhka-shymkent.kz/:path*",
       "permanent": true
     },
