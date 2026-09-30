@@ -31,8 +31,11 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
 
+<link rel="preload" as="image" href="images/hero-driveway.webp" media="(min-width: 1081px)" fetchpriority="high">
 <link rel="stylesheet" href="styles.css">
 
 <script type="application/ld+json">
@@ -45,6 +48,8 @@
   "image": "https://styazhka-shymkent.kz/images/hero-driveway.jpg",
   "telephone": "+77770865023",
   "priceRange": "₸₸",
+  "logo": "https://styazhka-shymkent.kz/images/logo.png",
+  "openingHours": "Mo-Su 08:00-20:00",
   "areaServed": [
     {"@type": "City", "name": "Шымкент"},
     {"@type": "AdministrativeArea", "name": "Туркестанская область"}
@@ -136,7 +141,7 @@
 <header class="site-header" id="siteHeader">
   <div class="container header-inner">
     <a href="#top" class="logo">
-      <img class="logo-mark" src="images/logo.png" alt="Логотип — Мастер по стяжке">
+      <img class="logo-mark" src="images/logo.webp" width="40" height="40" alt="Логотип — Мастер по стяжке">
       <span class="logo-stack">
         <span class="logo-text" data-i18n="logo.header">Мастер по стяжке</span>
       </span>
@@ -193,7 +198,7 @@
 
     <div class="hero-media">
       <div class="hero-photo">
-        <img src="images/hero-driveway.jpg" alt="Стяжка двора в Шымкенте — до и после">
+        <img src="images/hero-driveway.webp" width="1100" height="733" loading="lazy" alt="Стяжка двора в Шымкенте — до и после">
       </div>
       <div class="hero-badge-card">
         <strong data-i18n="hero.badgecard1">10+ ЛЕТ</strong>
@@ -226,7 +231,7 @@
         <h3 data-i18n="pain2.title">Идеальная ровность</h3>
         <p data-i18n="pain2.desc">Пол получается полностью ровным — без бугров и перепадов.</p>
       </div>
-      <div class="pain-card reveal hide-mobile">
+      <div class="pain-card reveal">
         <div class="pain-num"></div>
         <h3 data-i18n="pain3.title">Подходит под любое покрытие</h3>
         <p data-i18n="pain3.desc">Ламинат, плитка, линолеум и другие финишные материалы — без ограничений.</p>
@@ -260,19 +265,19 @@
 
     <div class="floor-types">
       <div class="floor-type reveal">
-        <div class="floor-type-photo"><img src="images/floor-laminate.jpg" alt="Стяжка под ламинат" loading="lazy"></div>
+        <div class="floor-type-photo"><img src="images/floor-laminate.webp" width="600" height="360" alt="Стяжка под ламинат" loading="lazy"></div>
         <span data-i18n="floortype1">Под ламинат</span>
       </div>
       <div class="floor-type reveal">
-        <div class="floor-type-photo"><img src="images/floor-tile.jpg" alt="Стяжка под плитку" loading="lazy"></div>
+        <div class="floor-type-photo"><img src="images/floor-tile.webp" width="600" height="396" alt="Стяжка под плитку" loading="lazy"></div>
         <span data-i18n="floortype2">Под плитку</span>
       </div>
       <div class="floor-type reveal">
-        <div class="floor-type-photo"><img src="images/floor-linoleum.jpg" alt="Стяжка под линолеум" loading="lazy"></div>
+        <div class="floor-type-photo"><img src="images/floor-linoleum.webp" width="600" height="435" alt="Стяжка под линолеум" loading="lazy"></div>
         <span data-i18n="floortype3">Под линолеум</span>
       </div>
       <div class="floor-type reveal">
-        <div class="floor-type-photo"><img src="images/floor-quartzvinyl.jpg" alt="Стяжка под кварцвинил" loading="lazy"></div>
+        <div class="floor-type-photo"><img src="images/floor-quartzvinyl.webp" width="600" height="408" alt="Стяжка под кварцвинил" loading="lazy"></div>
         <span data-i18n="floortype4">Под кварцвинил</span>
       </div>
     </div>
@@ -288,18 +293,18 @@
     </div>
 
     <div class="grid grid-3">
-      <div class="ba-item reveal" data-label="Стяжка пола в квартире" data-img="images/before-after-floor.jpg">
-        <img src="images/before-after-floor.jpg" alt="Стяжка пола До и После — Шымкент" loading="lazy">
+      <div class="ba-item reveal" data-label="Стяжка пола в квартире" data-img="images/before-after-floor.webp">
+        <img src="images/before-after-floor-sm.webp" width="800" height="533" alt="Стяжка пола До и После — Шымкент" loading="lazy">
         <div class="ba-overlay"><span data-i18n="ba1.label">Стяжка пола в квартире</span></div>
         <div class="ba-zoom"><svg class="ic"><use href="#i-zoom"/></svg></div>
       </div>
-      <div class="ba-item reveal" data-label="Стяжка двора частного дома" data-img="images/before-after-yard.jpg">
-        <img src="images/before-after-yard.jpg" alt="Стяжка двора До и После — Шымкент" loading="lazy">
+      <div class="ba-item reveal" data-label="Стяжка двора частного дома" data-img="images/before-after-yard.webp">
+        <img src="images/before-after-yard-sm.webp" width="800" height="533" alt="Стяжка двора До и После — Шымкент" loading="lazy">
         <div class="ba-overlay"><span data-i18n="ba2.label">Стяжка двора частного дома</span></div>
         <div class="ba-zoom"><svg class="ic"><use href="#i-zoom"/></svg></div>
       </div>
-      <div class="ba-item reveal" data-label="Стяжка у входа в частный дом" data-img="images/before-after-house.jpg">
-        <img src="images/before-after-house.jpg" alt="Стяжка перед домом До и После — Шымкент" loading="lazy">
+      <div class="ba-item reveal" data-label="Стяжка у входа в частный дом" data-img="images/before-after-house.webp">
+        <img src="images/before-after-house-sm.webp" width="800" height="599" alt="Стяжка перед домом До и После — Шымкент" loading="lazy">
         <div class="ba-overlay"><span data-i18n="ba3.label">Стяжка у входа в частный дом</span></div>
         <div class="ba-zoom"><svg class="ic"><use href="#i-zoom"/></svg></div>
       </div>
@@ -308,7 +313,7 @@
 </section>
 
 <!-- ===== PROCESS / STEPS ===== -->
-<section class="section hide-mobile" id="process">
+<section class="section" id="process">
   <div class="container">
     <div class="section-head reveal">
       <span class="eyebrow" data-i18n="process.eyebrow">Как мы работаем</span>
@@ -360,7 +365,7 @@
     <p data-i18n="offer.p">Свяжитесь с мастером — обсудим ваш объект, объём работ и рассчитаем стоимость.</p>
     <span class="offer-badge" data-i18n="offer.badge">Опыт более 10 лет</span>
     <div class="offer-buttons">
-      <a href="tel:+77770865023" class="btn btn-primary btn-lg"><svg class="ic"><use href="#i-phone"/></svg> <span data-i18n="hero.cta1">Рассчитать стоимость</span></a>
+      <a href="tel:+77770865023" class="btn btn-primary btn-lg"><svg class="ic"><use href="#i-phone"/></svg> <span data-i18n="final.call">Позвонить мастеру</span></a>
       <a href="https://wa.me/77770865023?text=Здравствуйте! Хочу узнать стоимость заливки стяжки." class="btn btn-accent btn-lg"><svg class="ic"><use href="#i-whatsapp"/></svg> <span data-i18n="common.whatsapp_link">Написать в WhatsApp</span></a>
     </div>
   </div>
@@ -433,7 +438,7 @@
 <footer class="site-footer">
   <div class="container footer-inner">
     <div class="footer-brand">
-      <span class="logo-text" data-i18n="logo.footer">мастер по стяжке</span>
+      <span class="logo-text" data-i18n="logo.footer">Мастер по стяжке</span>
       <p data-i18n="footer.desc">Заливка цементной стяжки пола и двора в Шымкенте и Туркестанской области. Опыт более 10 лет.</p>
     </div>
     <div class="footer-col">
@@ -451,7 +456,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <div class="container"><span id="year"></span> <span data-i18n="footer.copyright">© СтяжкаМастер. Все права защищены.</span></div>
+    <div class="container"><span id="year"></span> <span data-i18n="footer.copyright">© Мастер по стяжке. Все права защищены.</span></div>
   </div>
 </footer>
 
@@ -469,7 +474,7 @@
 <div class="modal" id="baModal">
   <div class="modal-inner">
     <button class="modal-close" id="modalClose" aria-label="Закрыть"><svg class="ic"><use href="#i-close"/></svg></button>
-    <img class="modal-photo" id="modalPhoto" src="" alt="">
+    <img class="modal-photo" id="modalPhoto" alt="">
     <p id="modalLabel"></p>
   </div>
 </div>

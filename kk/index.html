@@ -31,8 +31,11 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
 
+<link rel="preload" as="image" href="../images/hero-driveway.webp" media="(min-width: 1081px)" fetchpriority="high">
 <link rel="stylesheet" href="../styles.css">
 
 <script type="application/ld+json">
@@ -45,6 +48,8 @@
   "image": "https://styazhka-shymkent.kz/images/hero-driveway.jpg",
   "telephone": "+77770865023",
   "priceRange": "₸₸",
+  "logo": "https://styazhka-shymkent.kz/images/logo.png",
+  "openingHours": "Mo-Su 08:00-20:00",
   "areaServed": [
     {"@type": "City", "name": "Шымкент"},
     {"@type": "AdministrativeArea", "name": "Түркістан облысы"}
@@ -136,7 +141,7 @@
 <header class="site-header" id="siteHeader">
   <div class="container header-inner">
     <a href="#top" class="logo">
-      <img class="logo-mark" src="../images/logo.png" alt="Логотип — Стяжка шебері">
+      <img class="logo-mark" src="../images/logo.webp" width="40" height="40" alt="Логотип — Стяжка шебері">
       <span class="logo-stack">
         <span class="logo-text">Стяжка шебері</span>
       </span>
@@ -193,7 +198,7 @@
 
     <div class="hero-media">
       <div class="hero-photo">
-        <img src="../images/hero-driveway.jpg" alt="Шымкентте аула стяжкасы дейін және кейін">
+        <img src="../images/hero-driveway.webp" width="1100" height="733" loading="lazy" alt="Шымкентте аула стяжкасы дейін және кейін">
       </div>
       <div class="hero-badge-card">
         <strong>10+ ЖЫЛ</strong>
@@ -226,7 +231,7 @@
         <h3>Тамаша тегістік</h3>
         <p>Еден толық тегіс болады — ешбір ойық-қыр, дөңес жер қалмайды.</p>
       </div>
-      <div class="pain-card reveal hide-mobile">
+      <div class="pain-card reveal">
         <div class="pain-num"></div>
         <h3>Кез келген жабынға сәйкес</h3>
         <p>Ламинат, плитка, линолеум және басқа финиш материалдарына бірдей жарайды.</p>
@@ -260,19 +265,19 @@
 
     <div class="floor-types">
       <div class="floor-type reveal">
-        <div class="floor-type-photo"><img src="../images/floor-laminate.jpg" alt="Ламинат астына стяжка" loading="lazy"></div>
+        <div class="floor-type-photo"><img src="../images/floor-laminate.webp" width="600" height="360" alt="Ламинат астына стяжка" loading="lazy"></div>
         <span>Ламинатқа</span>
       </div>
       <div class="floor-type reveal">
-        <div class="floor-type-photo"><img src="../images/floor-tile.jpg" alt="Плитка астына стяжка" loading="lazy"></div>
+        <div class="floor-type-photo"><img src="../images/floor-tile.webp" width="600" height="396" alt="Плитка астына стяжка" loading="lazy"></div>
         <span>Плиткаға</span>
       </div>
       <div class="floor-type reveal">
-        <div class="floor-type-photo"><img src="../images/floor-linoleum.jpg" alt="Линолеум астына стяжка" loading="lazy"></div>
+        <div class="floor-type-photo"><img src="../images/floor-linoleum.webp" width="600" height="435" alt="Линолеум астына стяжка" loading="lazy"></div>
         <span>Линолеумге</span>
       </div>
       <div class="floor-type reveal">
-        <div class="floor-type-photo"><img src="../images/floor-quartzvinyl.jpg" alt="Кварцвинил астына стяжка" loading="lazy"></div>
+        <div class="floor-type-photo"><img src="../images/floor-quartzvinyl.webp" width="600" height="408" alt="Кварцвинил астына стяжка" loading="lazy"></div>
         <span>Кварцвинилге</span>
       </div>
     </div>
@@ -288,18 +293,18 @@
     </div>
 
     <div class="grid grid-3">
-      <div class="ba-item reveal" data-label="Пәтердегі еден стяжкасы" data-img="../images/before-after-floor.jpg">
-        <img src="../images/before-after-floor.jpg" alt="Еден стяжкасы дейін және кейін — Шымкент" loading="lazy">
+      <div class="ba-item reveal" data-label="Пәтердегі еден стяжкасы" data-img="../images/before-after-floor.webp">
+        <img src="../images/before-after-floor-sm.webp" width="800" height="533" alt="Еден стяжкасы дейін және кейін — Шымкент" loading="lazy">
         <div class="ba-overlay"><span>Пәтердегі еден стяжкасы</span></div>
         <div class="ba-zoom"><svg class="ic"><use href="#i-zoom"/></svg></div>
       </div>
-      <div class="ba-item reveal" data-label="Жеке үй аулясының стяжкасы" data-img="../images/before-after-yard.jpg">
-        <img src="../images/before-after-yard.jpg" alt="Аула стяжкасы дейін және кейін — Шымкент" loading="lazy">
-        <div class="ba-overlay"><span>Жеке үй аулясының стяжкасы</span></div>
+      <div class="ba-item reveal" data-label="Жеке үй ауласының стяжкасы" data-img="../images/before-after-yard.webp">
+        <img src="../images/before-after-yard-sm.webp" width="800" height="533" alt="Аула стяжкасы дейін және кейін — Шымкент" loading="lazy">
+        <div class="ba-overlay"><span>Жеке үй ауласының стяжкасы</span></div>
         <div class="ba-zoom"><svg class="ic"><use href="#i-zoom"/></svg></div>
       </div>
-      <div class="ba-item reveal" data-label="Үй кірер алдындағы стяжка" data-img="../images/before-after-house.jpg">
-        <img src="../images/before-after-house.jpg" alt="Үй алдындағы стяжка дейін және кейін — Шымкент" loading="lazy">
+      <div class="ba-item reveal" data-label="Үй кірер алдындағы стяжка" data-img="../images/before-after-house.webp">
+        <img src="../images/before-after-house-sm.webp" width="800" height="599" alt="Үй алдындағы стяжка дейін және кейін — Шымкент" loading="lazy">
         <div class="ba-overlay"><span>Үй кірер алдындағы стяжка</span></div>
         <div class="ba-zoom"><svg class="ic"><use href="#i-zoom"/></svg></div>
       </div>
@@ -308,7 +313,7 @@
 </section>
 
 <!-- ===== PROCESS / STEPS ===== -->
-<section class="section hide-mobile" id="process">
+<section class="section" id="process">
   <div class="container">
     <div class="section-head reveal">
       <span class="eyebrow">Жұмыс барысы</span>
@@ -360,7 +365,7 @@
     <p>Шебермен байланысыңыз — нысаныңызды, жұмыс көлемін талқылап, құнын есептейміз.</p>
     <span class="offer-badge">10 жылдан астам тәжірибе</span>
     <div class="offer-buttons">
-      <a href="tel:+77770865023" class="btn btn-primary btn-lg"><svg class="ic"><use href="#i-phone"/></svg> <span>Құнын есептеу</span></a>
+      <a href="tel:+77770865023" class="btn btn-primary btn-lg"><svg class="ic"><use href="#i-phone"/></svg> <span>Шеберге қоңырау шалу</span></a>
       <a href="https://wa.me/77770865023?text=Сәлеметсіз бе! Стяжка құю құнын білгім келеді." class="btn btn-accent btn-lg"><svg class="ic"><use href="#i-whatsapp"/></svg> <span>WhatsApp-қа жазу</span></a>
     </div>
   </div>
@@ -433,7 +438,7 @@
 <footer class="site-footer">
   <div class="container footer-inner">
     <div class="footer-brand">
-      <span class="logo-text">стяжка шебері</span>
+      <span class="logo-text">Стяжка шебері</span>
       <p>Шымкент және Түркістан облысында еден мен аулаға цементті стяжка құю. 10 жылдан астам тәжірибе.</p>
     </div>
     <div class="footer-col">
@@ -469,7 +474,7 @@
 <div class="modal" id="baModal">
   <div class="modal-inner">
     <button class="modal-close" id="modalClose" aria-label="Жабу"><svg class="ic"><use href="#i-close"/></svg></button>
-    <img class="modal-photo" id="modalPhoto" src="" alt="">
+    <img class="modal-photo" id="modalPhoto" alt="">
     <p id="modalLabel"></p>
   </div>
 </div>
