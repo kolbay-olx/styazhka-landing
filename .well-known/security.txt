@@ -1,0 +1,5 @@
+Contact: https://wa.me/77770865023
+Contact: tel:+77770865023
+Expires: 2027-09-01T00:00:00.000Z
+Preferred-Languages: ru, kk, en
+Canonical: https://styazhka-shymkent.kz/.well-known/security.txt

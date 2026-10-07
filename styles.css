@@ -336,7 +336,7 @@ p { color: var(--text-muted-dark); }
 .breadcrumbs { display: flex; flex-wrap: wrap; gap: 8px; font-size: 0.8rem; color: rgba(255,255,255,0.4); margin-bottom: 22px; }
 .breadcrumbs a { color: rgba(255,255,255,0.6); }
 .breadcrumbs a:hover { color: var(--white); }
-.page-hero h1 { color: var(--white); font-size: clamp(2.1rem, 4.6vw, 3.6rem); text-transform: uppercase; margin-bottom: 18px; }
+.page-hero h1 { color: var(--white); font-size: clamp(2.1rem, 4.6vw, 3.6rem); text-transform: uppercase; margin-bottom: 18px; overflow-wrap: break-word; }
 .page-hero h1 .accent { color: var(--orange); }
 .page-hero .hero-sub { margin-bottom: 24px; }
 .page-hero-price { display: inline-flex; align-items: baseline; gap: 8px; margin-bottom: 26px; padding: 10px 18px; border-radius: 12px; background: rgba(255,98,0,0.12); border: 1px solid rgba(255,98,0,0.28); }
@@ -405,6 +405,10 @@ p { color: var(--text-muted-dark); }
 .footer-cta { margin-top: 4px; align-self: flex-start; }
 .footer-col a.footer-cta, .footer-col a.footer-cta span, .footer-col a.footer-cta .ic { color: var(--white); }
 .footer-bottom { border-top: 1px solid var(--border-dark); padding: 20px 0; text-align: center; font-size: 0.78rem; color: rgba(255,255,255,0.5); }
+.footer-bottom a { color: rgba(255,255,255,0.7); text-decoration: underline; text-underline-offset: 2px; }
+.footer-bottom a:hover { color: var(--white); }
+.prose h3 { font-size: 1.15rem; margin: 28px 0 10px; }
+.prose a { color: var(--orange); text-decoration: underline; }
 
 /* ===== Floating WhatsApp ===== */
 .float-btn {

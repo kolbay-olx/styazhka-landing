@@ -19,8 +19,15 @@ document.querySelectorAll('.faq-item').forEach(item => {
 
   btn.addEventListener('click', () => {
     const wasOpen = item.classList.contains('open');
-    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-    if (!wasOpen) item.classList.add('open');
+    document.querySelectorAll('.faq-item').forEach(i => {
+      i.classList.remove('open');
+      const q = i.querySelector('.faq-q');
+      if (q) q.setAttribute('aria-expanded', 'false');
+    });
+    if (!wasOpen) {
+      item.classList.add('open');
+      btn.setAttribute('aria-expanded', 'true');
+    }
   });
 });
 
