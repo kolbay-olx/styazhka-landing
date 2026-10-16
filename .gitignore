@@ -1,2 +1,7 @@
 .vercel
 .env*
+
+# Local working files (not part of the site)
+output/
+*.ps1
+*1366x210*.png
